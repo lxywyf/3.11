@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <p id='ab' >文字2</p>
+  <script>
+    document.write("hi hi")
+    document.write("<h1>hi hi</h1>")
+
+    var a = 8
+    var b = 88
+    document.write( b - a )
+    
+    document.write('<br>')
+    var i = 0
+    while( i <= 2 ){
+      document.write( i +'<br>')
+      i++
+    }
+
+    var x = 8;
+    if(x > 8){
+      document.write('x是一个大于8的数')
+    }else{
+      document.write('x是一个小于等于8的数')
+    }
+    document.getElementById('ab').innerHTML = '我才是文字'
+
+    
+    document.write('<br>')
+    function whoisbigger(x,y) {
+      if(x > y){
+        return x
+      } else {
+        return y
+      }
+    }
+    document.write(whoisbigger(1,2))
+    document.write('<br>')
+    document.write(whoisbigger(18,2))
+    document.write('<br>')
+    document.write(whoisbigger(145,422))
+    document.write('<br>')
+    document.write(whoisbigger(141,882))
+    document.write('<br>')
+    document.write(whoisbigger(1885,295))
+    document.write('<br>')
+    document.write(whoisbigger(71,72))
+
+    document.write('<br>' + Math.random())
+    document.write('<br>' + Math.random())
+    document.write('<br>' + Math.random())
+    document.write('<br>' + Math.random())
+    document.write('<br>' + Math.random())
+    document.write('<br>' + Math.random())
+    document.write('<br>' + Math.floor(Math.random()* 10))
+
+    document.write('<br>')
+    function dog(b){
+      if (b<=15){
+        return '汪汪'
+      }else{
+        return '呜呜'
+      }
+    }
+    document.write('旺财'+dog(11)+'叫')
+
+    document.write('<br>')
+    
+
+  </script>
+</body>
+</html>
